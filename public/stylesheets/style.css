@@ -1,0 +1,27 @@
+html,
+body {
+  font-family: "Noto Sans TC";
+  height: -webkit-fill-available;
+  /* 關閉選取 */
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+body {
+  min-height: 100vh;
+}
+
+img {
+  max-width: 100%;
+  max-height: inherit;
+  object-fit: contain !important;
+}
+
+svg {
+  display: inline-block;
+  width: 1rem;
+  height: 1rem;
+  fill: currentColor;
+}
