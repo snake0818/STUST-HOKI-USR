@@ -8,6 +8,6 @@ const scroll = new LocomotiveScroll({
     el: document.querySelector('[data-scroll-container]'),
     smooth: true,
     tablet: {
-        breakpoint: 768
+        breakpoint: 1000
     }
 });
