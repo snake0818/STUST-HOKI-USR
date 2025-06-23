@@ -407,6 +407,9 @@ html:not(.has-scroll-smooth) .c-fixed {
   top: 0;
 }
 
+.fs-0 {
+  font-size: 0;
+}
 .c-section_infos {
   max-width: 320px;
   position: relative;
@@ -417,7 +420,6 @@ html:not(.has-scroll-smooth) .c-fixed {
   font-weight: bold;
 }
 .c-section_infos_inner {
-  font-size: 0;
   gap: 3rem;
 }
 .c-section_infos_inner > * {
@@ -502,6 +504,14 @@ html:not(.has-scroll-smooth) .c-fixed {
   .c-section_infos_inner > .info-55 {
     display: inline-block;
     width: 55%;
+  }
+}
+@media (min-width: 992px) {
+  #service-place {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
   }
 }
 @media (min-width: 1000px) {
