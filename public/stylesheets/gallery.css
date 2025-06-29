@@ -1,0 +1,12 @@
+.gallery-img:hover {
+  transform: scale(1.01625);
+}
+
+.gallery-text {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  font-size: large;
+  font-weight: bold;
+  text-align: center;
+}
