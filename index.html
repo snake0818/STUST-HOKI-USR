@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html class="is-smooth-scroll-compatible is-loading">
+<html>
 
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
@@ -9,247 +9,151 @@
     <!-- Bootstrap v5.3.6 -->
     <link rel="stylesheet" href="libs/bootstrap.min.css">
     <script src="libs/bootstrap.min.js"></script>
-    <!-- Locomotive-scroll v5 -->
-    <link rel="stylesheet" href="libs/locomotive-scroll.min.css">
-    <script src="libs/locomotive-scroll.min.js"></script>
+    <!-- GSAP v3.7.1 -->
+    <script src="libs/gsap.min.js"></script>
+    <script src="libs/ScrollTrigger.min.js"></script>
 
     <link rel="stylesheet" href="public/stylesheets/style.css">
     <link rel="stylesheet" href="public/stylesheets/scroll.css">
 </head>
 
-<body style="background-color: #f0f0f0;">
-    <!-- Main -->
-    <main class="overflow-hidden" data-scroll-container>
-        <section data-scroll-section>
-            <div class="o-container">
-                <header class="c-header" id="header">
-                    <div class="c-header_heading" data-scroll data-scroll-speed="-8" data-scroll-position="top"
-                        data-scroll-target="#header" data-scroll-repeat>
-                        <div class="o-layout">
-                            <div class="row align-items-center">
-                                <div class="col o-layout_item" data-scroll data-scroll-target="#header"
-                                    data-scroll-direction="horizontal" data-scroll-position="top" data-scroll
-                                    data-scroll-speed="-5">
-                                    <span class="u-label c-header_heading_label">
-                                        <a class="navbar-brand m-0">
-                                            <img src="public/assets/usr_logo1.png" draggable="false"
-                                                style="max-height: 48px;">
-                                        </a>
-                                    </span>
-                                </div>
-                                <div class="col o-layout_item" data-scroll data-scroll-target="#header"
-                                    data-scroll-direction="horizontal" data-scroll-position="top" data-scroll
-                                    data-scroll-speed="5">
-                                    <span class="u-label c-header_heading_label d-flex justify-content-end">
-                                        <a class="navbar-brand m-0">
-                                            <img src="public/assets/stust_logo1.png" draggable="false"
-                                                style="max-height: 48px;">
-                                        </a>
-                                    </span>
-                                </div>
-                            </div>
-                            <div class="o-layout_item text-end" data-scroll data-scroll-target="#header"
-                                data-scroll-direction="horizontal" data-scroll-position="top" data-scroll
-                                data-scroll-speed="-10">
-                                <div class="c-header_heading_bg">
-                                    <img src="public/assets/usr_icon.png" draggable="false" style="height: 90vh;">
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <h1 class="c-header_title" data-scroll>
-                        <div class="c-header_title_line -main">
-                            <span class="o-h1 -huge" data-scroll data-scroll-position="top" data-scroll-speed="4">
-                                USR
-                            </span>
-                        </div>
-                        <div class="c-header_title_line -main" style="font-size: 0;">
-                            <span class="o-h1" data-scroll data-scroll-position="top" data-scroll-delay="0.05"
-                                data-scroll-speed="4">青</span>
-                            <span class="o-h1" data-scroll data-scroll-position="top" data-scroll-delay="0.05"
-                                data-scroll-speed="6">銀</span>
-                            <span class="o-h1" data-scroll data-scroll-position="top" data-scroll-delay="0.05"
-                                data-scroll-speed="3">共</span>
-                            <span class="o-h1" data-scroll data-scroll-position="top" data-scroll-delay="0.05"
-                                data-scroll-speed="5">創</span>
-                        </div>
-                        <div class="c-header_title_line -sub" style="font-size: 0;">
-                            <span data-scroll data-scroll-speed="2.5" data-scroll-position="top"
-                                style="font-size: 4.5rem;">
-                                打造在地智慧
-                            </span>
-                            <br class="d-lg-none">
-                            <span data-scroll data-scroll-speed="1.5" data-scroll-position="top"
-                                style="font-size: 4.5rem;">
-                                自在不老力
-                            </span>
-                        </div>
-                    </h1>
-                </header>
-            </div>
-        </section>
+<body class="overflow-x-hidden" style="background-color: #f0f0f0;">
 
-        <section data-scroll-section>
-            <div class="o-container">
-                <div class="c-summary">
-                    <div class="row flex-row-reverse">
-                        <div class="col-lg-5">
-                            <h1 class="fw-bold -huge">目錄</h1>
-                        </div>
-                        <div class="col-lg-7 align-content-center mt-3">
-                            <ul class="c-summary_list">
-                                <li class="c-summary_list_item u-label" data-scroll>
-                                    <a href="#AboutUSR" data-scroll-to>
-                                        <svg width="40" height="32">
-                                            <use xlink:href="#question"></use>
-                                        </svg>
-                                        <span>什麼是「USR」?</span>
-                                        <span class="c-summary_list_icon u-icon">↓</span>
-                                    </a>
-                                </li>
-                                <li class="c-summary_list_item u-label" data-scroll>
-                                    <a href="#AboutHOKI" data-scroll-to>
-                                        <svg width="40" height="32">
-                                            <use xlink:href="#people-arrow"></use>
-                                        </svg>
-                                        <span>什麼是「青銀共創」?</span>
-                                        <span class="c-summary_list_icon u-icon">↓</span>
-                                    </a>
-                                </li>
-                                <li class="c-summary_list_item u-label" data-scroll>
-                                    <a href="#WhatDo" data-scroll-to>
-                                        <svg width="40" height="32">
-                                            <use xlink:href="#hand"></use>
-                                        </svg>
-                                        <span>青銀共創在做什麼?</span>
-                                        <span class="c-summary_list_icon u-icon">↓</span>
-                                    </a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <svg xmlns="http://www.w3.org/2000/svg" class="d-none">
-                <symbol id="list" viewBox="0 0 16 16">
-                    <path fill-rule="evenodd"
-                        d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z">
-                    </path>
-                </symbol>
-                <symbol id="question" viewBox="0 0 320 512">
-                    <path
-                        d="M80 160c0-35.3 28.7-64 64-64l32 0c35.3 0 64 28.7 64 64l0 3.6c0 21.8-11.1 42.1-29.4 53.8l-42.2 27.1c-25.2 16.2-40.4 44.1-40.4 74l0 1.4c0 17.7 14.3 32 32 32s32-14.3 32-32l0-1.4c0-8.2 4.2-15.8 11-20.2l42.2-27.1c36.6-23.6 58.8-64.1 58.8-107.7l0-3.6c0-70.7-57.3-128-128-128l-32 0C73.3 32 16 89.3 16 160c0 17.7 14.3 32 32 32s32-14.3 32-32zm80 320a40 40 0 1 0 0-80 40 40 0 1 0 0 80z" />
-                </symbol>
-                <symbol id="people-arrow" viewBox="0 0 640 512">
-                    <path
-                        d="M64 64a64 64 0 1 1 128 0A64 64 0 1 1 64 64zM25.9 233.4C29.3 191.9 64 160 105.6 160l44.8 0c27 0 51 13.4 65.5 34.1c-2.7 1.9-5.2 4-7.5 6.3l-64 64c-21.9 21.9-21.9 57.3 0 79.2L192 391.2l0 72.8c0 26.5-21.5 48-48 48l-32 0c-26.5 0-48-21.5-48-48l0-115.7c-26.5-9.5-44.7-35.8-42.2-65.6l4.1-49.3zM448 64a64 64 0 1 1 128 0A64 64 0 1 1 448 64zM431.6 200.4c-2.3-2.3-4.9-4.4-7.5-6.3c14.5-20.7 38.6-34.1 65.5-34.1l44.8 0c41.6 0 76.3 31.9 79.7 73.4l4.1 49.3c2.5 29.8-15.7 56.1-42.2 65.6L576 464c0 26.5-21.5 48-48 48l-32 0c-26.5 0-48-21.5-48-48l0-72.8 47.6-47.6c21.9-21.9 21.9-57.3 0-79.2l-64-64zM272 240l0 32 96 0 0-32c0-9.7 5.8-18.5 14.8-22.2s19.3-1.7 26.2 5.2l64 64c9.4 9.4 9.4 24.6 0 33.9l-64 64c-6.9 6.9-17.2 8.9-26.2 5.2s-14.8-12.5-14.8-22.2l0-32-96 0 0 32c0 9.7-5.8 18.5-14.8 22.2s-19.3 1.7-26.2-5.2l-64-64c-9.4-9.4-9.4-24.6 0-33.9l64-64c6.9-6.9 17.2-8.9 26.2-5.2s14.8 12.5 14.8 22.2z" />
-                </symbol>
-                <symbol id="hand" viewBox="0 0 512 512">
-                    <path
-                        d="M288 32c0-17.7-14.3-32-32-32s-32 14.3-32 32l0 208c0 8.8-7.2 16-16 16s-16-7.2-16-16l0-176c0-17.7-14.3-32-32-32s-32 14.3-32 32l0 272c0 1.5 0 3.1 .1 4.6L67.6 283c-16-15.2-41.3-14.6-56.6 1.4s-14.6 41.3 1.4 56.6L124.8 448c43.1 41.1 100.4 64 160 64l19.2 0c97.2 0 176-78.8 176-176l0-208c0-17.7-14.3-32-32-32s-32 14.3-32 32l0 112c0 8.8-7.2 16-16 16s-16-7.2-16-16l0-176c0-17.7-14.3-32-32-32s-32 14.3-32 32l0 176c0 8.8-7.2 16-16 16s-16-7.2-16-16l0-208z" />
-                </symbol>
-            </svg>
-        </section>
+    <section class="vh-100 text-center align-content-center fw-bold" style="font-size: 22vw;">
+        青銀共創
+    </section>
 
-        <section class="c-section" data-scroll-section id="AboutUSR">
-            <div class="o-container py-3">
-                <div class="d-flex flex-column align-items-center fs-2">
-                    <img src="public/images/USR.jpg">
-                    <div class="d-xl-flex gap-5">
-                        <div class="col-xl my-5">
-                            <h2 class="fw-bold">三大主軸</h2>
-                            <ol class="ms-5 fw-bold">
-                                <li class="mt-3">在地連結：<span class="fw-normal">關心地方發展，促進社區合作與認同。</span></li>
-                                <li class="mt-2">人才培育：<span class="fw-normal">結合理論與實務，縮短學用落差。</span></li>
-                                <li class="mt-2">國際連結：<span class="fw-normal">提升國際視野，接軌全球趨勢。</span></li>
+    <section class="o-container" style="min-height: 75vh;">
+        <div class="c-summary">
+            <ul class="c-summary_list">
+                <li class="c-summary_list_item">
+                    <a href="#AboutUSR">
+                        <svg>
+                            <use xlink:href="public/icons.svg#question"></use>
+                        </svg>
+                        <span>什麼是「USR」？</span>
+                    </a>
+                </li>
+                <li class="c-summary_list_item">
+                    <a href="#AboutHOKI">
+                        <svg>
+                            <use xlink:href="public/icons.svg#people-arrow"></use>
+                        </svg>
+                        <span>什麼是「青銀共創」？</span>
+                    </a>
+                </li>
+                <li class="c-summary_list_item">
+                    <a href="#WhatDo">
+                        <svg>
+                            <use xlink:href="public/icons.svg#hand"></use>
+                        </svg>
+                        <span>青銀共創在做什麼？</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <link rel="stylesheet" href="public/stylesheets/summary.css">
+    </section>
+
+    <main>
+        <div id="AboutUSR">
+            <section>
+                <img class="vw-100" src="public/images/USR.jpg">
+                <div class="o-container">
+                    <div class="d-xl-flex">
+                        <div class="col-xl-7 my-5">
+                            <h1 class="fs-1 fw-bold">三大主軸</h1>
+                            <ol class="ms-5 fs-3 fw-bold">
+                                <li>在地連結：<span>關心地方發展，促進社區合作與認同。</span></li>
+                                <li>人才培育：<span>結合理論與實務，縮短學用落差。</span></li>
+                                <li>國際連結：<span>提升國際視野，接軌全球趨勢。</span></li>
                             </ol>
                         </div>
-                        <div class="col-xl my-5">
-                            <h2 class="fw-bold">支援與推動機制</h2>
-                            <ol class="ms-5">
-                                <li class="mt-3">教育部設立「USR推動中心」</li>
-                                <li class="mt-2">作為資源整合與協作平台</li>
-                                <li class="mt-2">協助各大學與團隊共同推進USR目標</li>
+                        <div class="col-xl-5 my-5">
+                            <h1 class="fs-1 fw-bold">支援與推動機制</h1>
+                            <ol class="ms-5 fs-3 fw-bold">
+                                <li><span>教育部設立「USR推動中心」</span></li>
+                                <li><span>作為資源整合與協作平台</span></li>
+                                <li><span>協助各大學與團隊共同推進USR目標</span></li>
                             </ol>
                         </div>
                     </div>
                 </div>
-            </div>
-        </section>
-        <section class="c-section" data-scroll-section>
-            <div class="o-container">
+            </section>
+            <section>
                 <div class="row">
-                    <div class="col-xl-7 align-content-center text-center">
+                    <div class="col-xxl-7 align-content-center text-center">
                         <img src="public/images/SDGs.jpg">
                     </div>
-                    <div class="col-xl-5 d-flex justify-content-center align-items-center">
-                        <div class="my-3 fs-2">
-                            <h2 class="fw-bold">112-113推動重點</h2>
-                            <ol class="ms-5">
-                                <li class="mt-3">將USR理念納入校務治理</li>
-                                <li class="mt-2">深化聯合國永續發展(SDGs)議題</li>
-                                <li class="mt-2">強調「以人為本」與「在地需求」</li>
-                                <li class="mt-2">結合人文關懷與科技導入</li>
-                                <li class="mt-2">解決地區問題，落實社會責任</li>
+                    <div class="col-xxl-5 d-flex align-items-center">
+                        <div class="o-container">
+                            <h1 class="fw-bold">112-113 推動重點</h1>
+                            <ol class="ms-5 fs-3 fw-bold">
+                                <li><span>將USR理念納入校務治理</span></li>
+                                <li><span>深化聯合國永續發展(SDGs)議題</span></li>
+                                <li><span>強調「以人為本」與「在地需求」</span></li>
+                                <li><span>結合人文關懷與科技導入</span></li>
+                                <li><span>解決地區問題，落實社會責任</span></li>
                             </ol>
                         </div>
                     </div>
                 </div>
-            </div>
-        </section>
-        <section class="c-section" data-scroll-section>
-            <div class="o-container">
+            </section>
+            <section>
                 <div class="row flex-row-reverse">
                     <div class="col-xl-7 text-center">
                         <img src="public/images/STUST.jpg">
                     </div>
                     <div class="col-xl-5 d-flex justify-content-center align-items-center">
-                        <div class="my-3 fs-2">
-                            <h2 class="fw-bold">計畫願景</h2>
-                            <p>建立大學作為社會改變力量的角色，從在地扎根，走向國際</p>
+                        <div class="o-container">
+                            <h1 class="fs-1 fw-bold">計畫願景</h1>
+                            <p class="fs-3">建立大學作為社會改變力量的角色，從在地扎根，走向國際</p>
                             <br>
-                            <h2 class="fw-bold">最終願景</h2>
-                            <ol class="ms-5">
-                                <li class="mt-3">展現大學影響力與社會貢獻</li>
-                                <li class="mt-2">實踐<span class="fw-bold">環境、社會、經濟</span>面向的永續發展</li>
+                            <h1 class="fs-1 fw-bold">最終願景</h1>
+                            <ol class="ms-5 fs-3 fw-bold">
+                                <li><span>展現大學影響力與社會貢獻</span></li>
+                                <li><span>實踐<span class="fw-bold">環境、社會、經濟</span>面向的永續發展</span></li>
                             </ol>
                         </div>
                     </div>
                 </div>
-            </div>
-        </section>
+            </section>
+        </div>
 
-        <section class="c-section" data-scroll-section id="AboutHOKI">
-            <div id="elder-bg" class="py-5 text-white d-lg-flex align-items-center justify-content-center"
-                style="position: relative;margin-bottom: 35vh;">
-                <div class="o-container mb-0">
-                    <div class="row">
-                        <div class="col-lg">
-                            <div class="d-flex flex-column align-items-center">
-                                <div class="">
-                                    <h2 class="text-warning">議題</h2>
-                                    <ul class="ms-3 pt-3" style="list-style: disc;">
-                                        <li>
-                                            <span class="text-warning">台灣</span>
-                                            即將進入
-                                            <span class="text-warning">超高齡</span>
-                                            社會
-                                        </li>
-                                        <li>
-                                            <span class="text-warning">83.5%</span>
-                                            高齡者為
-                                            <span class="text-warning">健康與亞健康</span>
-                                        </li>
-                                        <li>舊常態-傳統老年舊框架思維集體錯覺</li>
-                                        <li>
-                                            <span class="text-warning">照護人力不足</span>
-                                            ，
-                                            <span class="text-danger">支持系統尚待成熟</span>
-                                        </li>
-                                    </ul>
-                                </div>
-                                <div class="d-flex justify-content-center">
-                                    <div class="bg-secondary rounded rounded-3 p-2 text-center" style="width: 350px;">
+        <div id="AboutHOKI">
+            <section>
+                <div class="py-5" style="background: url('public/images/elder.png') center center / cover no-repeat;
+                    mix-blend-mode: multiply;
+                    width: 100vw;
+                    color: white;
+                    position: relative;">
+                    <div class="o-container">
+                        <div class="row">
+                            <div class="col-lg d-flex flex-column">
+                                <div class="d-flex flex-column align-items-center h-100">
+                                    <div>
+                                        <h1 class="fs-1 fw-bold text-warning">議題</h1>
+                                        <ul class="fs-4" style="list-style: disc;">
+                                            <li>
+                                                <span class="text-warning">台灣</span>
+                                                即將進入
+                                                <span class="text-warning">超高齡</span>
+                                                社會
+                                            </li>
+                                            <li>
+                                                <span class="text-warning">83.5%</span>
+                                                高齡者為
+                                                <span class="text-warning">健康與亞健康</span>
+                                            </li>
+                                            <li>舊常態-傳統老年舊框架思維集體錯覺</li>
+                                            <li>
+                                                <span class="text-warning">照護人力不足</span>
+                                                ，
+                                                <span class="text-danger fw-bold">支持系統尚待成熟</span>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="bg-secondary rounded rounded-3 p-3 fs-3 text-center mt-auto">
                                         台灣老年
                                         <span class="text-warning">照護壓力</span>
                                         +
@@ -259,493 +163,373 @@
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="col-lg-2 py-3 align-content-center">
-                            <div class="d-flex d-lg-block justify-content-center">
-                                <div class="arrow-text text-center text-warning">
-                                    USR計畫進入
-                                </div>
-                                <div class="arrow-container">
-                                    <div class="arrow-line"></div>
-                                    <div class="arrow-head"></div>
+                            <div class="col-lg-2 py-4 align-content-center">
+                                <div class="d-flex d-lg-block justify-content-center">
+                                    <h5 class="arrow-text text-center text-warning m-0">USR計畫進入</h5>
+                                    <div class="arrow-container">
+                                        <div class="arrow-line"></div>
+                                        <div class="arrow-head"></div>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="col-lg py-3">
-                            <div class="d-flex flex-column align-items-center">
-                                <div class="">
-                                    <h2 class="text-warning">計畫目標</h2>
-                                    <ul class="ms-3 pt-3" style="list-style: disc;">
-                                        <li class="text-warning">
-                                            <span class="text-warning">活力健康樂活老年</span>
-                                        </li>
-                                        <li>
-                                            新常態-充滿活力與動能的
-                                            <span class="text-warning">健康長壽社會</span>
-                                        </li>
-                                        <li>
-                                            日本移地學習，
-                                            <span class="text-warning">翻轉老年生活態度</span>
-                                        </li>
-                                        <li>
-                                            培育
-                                            <span class="text-warning">生活照護人才，精準健康照護</span>
-                                        </li>
-                                        <li>
-                                            <span class="text-warning">青銀共融樂活，創齡自在不老</span>
-                                        </li>
-                                    </ul>
-                                </div>
-                                <div class="bg-secondary rounded rounded-3 p-2 text-center" style="width: 350px;">
-                                    青銀永續共融
-                                    <br>
-                                    打造在地智慧自在不老力
+                            <div class="col-lg d-flex flex-column">
+                                <div class="d-flex flex-column align-items-center h-100">
+                                    <div>
+                                        <h1 class="fs-1 fw-bold text-warning">計畫目標</h1>
+                                        <ul class="fs-4" style="list-style: disc;">
+                                            <li class="text-warning">
+                                                <span class="text-warning">活力健康樂活老年</span>
+                                            </li>
+                                            <li>
+                                                新常態-充滿活力與動能的
+                                                <span class="text-warning">健康長壽社會</span>
+                                            </li>
+                                            <li>
+                                                日本移地學習，
+                                                <span class="text-warning">翻轉老年生活態度</span>
+                                            </li>
+                                            <li>
+                                                培育
+                                                <span class="text-warning">生活照護人才，精準健康照護</span>
+                                            </li>
+                                            <li>
+                                                <span class="text-warning">青銀共融樂活，創齡自在不老</span>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="bg-secondary rounded rounded-3 p-3 fs-3 text-center mt-auto">
+                                        青銀永續共融
+                                        <br>
+                                        打造在地智慧自在不老力
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                    </div>
-                    <div id="service-place" class="my-5">
-                        <h3 class="text-center text-warning mb-3">服務場域</h3>
-                        <div class="d-flex justify-content-center gap-3" style="height: 70px;">
-                            <img src="public/images/PracticalResults/Jinhua/Jinhua.png">
-                            <img src="public/images/PracticalResults/Kunshen/Kunshen.png">
-                            <img src="public/images/PracticalResults/Wenling/Wenling.png">
+                            <div class="col-12 my-4">
+                                <h3 class="text-center text-warning">服務場域</h3>
+                                <div class="d-flex justify-content-center gap-1" style="height: 95px;">
+                                    <img src="public/images/PracticalResults/Jinhua/Jinhua.png">
+                                    <img src="public/images/PracticalResults/Kunshen/Kunshen.png">
+                                    <img src="public/images/PracticalResults/Wenling/Wenling.png">
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
-            <style>
-                #elder-bg {
-                    background-image: url(public/images/elder.png);
-                    background-position: 50%;
-                    background-size: cover;
-                    height: 100%;
-                    mix-blend-mode: multiply;
-                    opacity: .95;
-                    min-height: 120vh;
-                    font-size: 1.375rem;
-                }
-
-                #elder-bg h2 {
-                    font-size: 2.75rem;
-                }
-
-                @media (min-width: 992px) {
-                    #service-place {
-                        position: absolute;
-                        bottom: 0;
-                        left: 0;
-                        right: 0;
-                    }
-                }
-            </style>
-        </section>
-        <section class="c-section" data-scroll-section>
-            <div class="o-container">
-                <h2 class="fw-bold" style="color: #3A8F98;">可行性分析：計畫執行與推動具體可行。</h2>
-                <span style="color: #3A8F98;opacity: .5;">
-                    Feasibility Analysis：
-                    The implementation and promotion of the project are concrete and achievable.
-                </span>
-                <div class="stair-container pt-3">
-                    <div class="step">
-                        <div class="step-title">
-                            對接社區需求
-                            <br>
-                            落實在地實踐
+            </section>
+            <section>
+                <div class="o-container">
+                    <h1 class="fs-1 fw-bold mb-0" style="color: #3A8F98;">可行性分析：計畫執行與推動具體可行。</h1>
+                    <span style="color: #3A8F98;opacity: .75;">
+                        Feasibility Analysis： The implementation and promotion of the project are concrete and
+                        achievable.
+                    </span>
+                    <div class="stair-container pt-5">
+                        <div class="step">
+                            <div class="step-title">
+                                對接社區需求
+                                <br>
+                                落實在地實踐
+                            </div>
+                            <div class="step-text">
+                                Aligns with community needs and supports localized implementation
+                            </div>
                         </div>
-                        <div class="step-text">
-                            Aligns with community needs and supports localized implementation
+                        <div class="step">
+                            <div class="step-title">
+                                多元人才培育
+                                <br>
+                                實踐在地關懷
+                            </div>
+                            <div class="step-text">
+                                Cultivates diverse talents to foster local care and engagement
+                            </div>
                         </div>
-                    </div>
-                    <div class="step">
-                        <div class="step-title">
-                            多元人才培育
-                            <br>
-                            實踐在地關懷
+                        <div class="step">
+                            <div class="step-title">
+                                跨校跨域合作
+                                <br>
+                                在地資源整合
+                            </div>
+                            <div class="step-text">
+                                Promotes cross-university and cross-disciplinary collaboration to integrate local
+                                resources
+                            </div>
                         </div>
-                        <div class="step-text">
-                            Cultivates diverse talents to foster local care and engagement
+                        <div class="step">
+                            <div class="step-title">
+                                成就世代融合
+                                <br>
+                                高齡友善社區
+                            </div>
+                            <div class="step-text">
+                                Achieves intergenerational integration and builds age-friendly communities
+                            </div>
                         </div>
-                    </div>
-                    <div class="step">
-                        <div class="step-title">
-                            跨校跨域合作
-                            <br>
-                            在地資源整合
-                        </div>
-                        <div class="step-text">
-                            Promotes cross-university and cross-disciplinary collaboration to integrate local
-                            resources
+                        <div class="step">
+                            <div class="step-title">
+                                青銀共榮樂活
+                                <br>
+                                創齡自在不老
+                            </div>
+                            <div class="step-text">
+                                Encourages active aging through intergenerational co-living and joyful engagement,
+                                creating
+                                an ageless lifestyle
+                            </div>
                         </div>
                     </div>
-                    <div class="step">
-                        <div class="step-title">
-                            成就世代融合
-                            <br>
-                            高齡友善社區
-                        </div>
-                        <div class="step-text">
-                            Achieves intergenerational integration and builds age-friendly communities
-                        </div>
-                    </div>
-                    <div class="step">
-                        <div class="step-title">
-                            青銀共榮樂活
-                            <br>
-                            創齡自在不老
-                        </div>
-                        <div class="step-text">
-                            Encourages active aging through intergenerational co-living and joyful engagement,
-                            creating
-                            an ageless lifestyle
-                        </div>
-                    </div>
+                    <link rel="stylesheet" href="public/stylesheets/stair.css">
                 </div>
-                <link rel="stylesheet" href="public/stylesheets/stair.css">
-                <link rel="stylesheet" href="public/stylesheets/gallery.css">
-            </div>
-        </section>
-        <section class="c-section" data-scroll-section>
-            <div class="o-container">
-                <h2 id="timeline-title" class="mb-3 fw-bold text-secondary">南臺科大青銀共創 USR 計畫期程</h2>
-                <ol class="timeline" role="list">
-                    <li class="timeline-item">
-                        <article class="timeline-content">
-                            <header>
-                                <h3>106</h3>
-                                <h3>年度</h3>
-                                <time>106/08/01 - 107/03/31</time>
-                            </header>
-                            <div class="event-content">
-                                <p>「產學攜手、青銀共創
-                                    <span class="break">培育智慧照護科技人才」</span>
-                                </p>
-                            </div>
-                            <span class="tag">萌牙型計畫</span>
-                        </article>
-                    </li>
-                    <li class="timeline-item">
-                        <article class="timeline-content">
-                            <header>
-                                <h3>第一期</h3>
-                                <h3>107-108</h3>
-                                <time>107/4/1 - 108/12/31</time>
-                            </header>
-                            <div class="event-content">
-                                <p>「青銀共創、攜手在地
-                                    <span class="break">共築智慧高齡友善社區」</span>
-                                </p>
-                            </div>
-                            <span class="tag">深耕型計畫</span>
-                        </article>
-                    </li>
-                    <li class="timeline-item">
-                        <article class="timeline-content">
-                            <header>
-                                <h3>第二期</h3>
-                                <h3>109-111</h3>
-                                <time>109/1/1-111/12/31</time>
-                            </header>
-                            <div class="event-content">
-                                <p>「青銀共創、攜手在地
-                                    <span class="break">共築智慧高齡友善社區」</span>
-                                </p>
-                            </div>
-                            <span class="tag">深耕型計畫</span>
-                        </article>
-                    </li>
-                    <li class="timeline-item">
-                        <article class="timeline-content">
-                            <header>
-                                <h3>第三期</h3>
-                                <h3>111-112</h3>
-                                <time>111/1/1-112/12/31</time>
-                            </header>
-                            <div class="event-content">
-                                <p>「青銀共創打造在地
-                                    <span class="break">智慧自在不老力」</span>
-                                </p>
-                            </div>
-                            <span class="tag">永續發展類特色<br>永續型計畫</span>
-                        </article>
-                    </li>
-                    <li class="timeline-item -now">
-                        <article class="timeline-content">
-                            <header>
-                                <h3>第四期</h3>
-                                <h3>114-116</h3>
-                                <time>114/1/1-116/12/31</time>
-                            </header>
-                            <div class="event-content">
-                                <p>「青銀共創打造在地
-                                    <span class="break">智慧自在不老力」</span>
-                                </p>
-                            </div>
-                            <span class="tag">永續發展類特色<br>永續型計畫</span>
-                        </article>
-                    </li>
-                </ol>
+            </section>
+            <section>
+                <div class="o-container">
+                    <h1 id="timeline-title" class="fs-1 fw-bold text-secondary">南臺科大青銀共創 USR 計畫期程</h1>
+                    <ol class="timeline" role="list">
+                        <li class="timeline-item">
+                            <article class="timeline-content">
+                                <div class="event-header">
+                                    <h3>第零期<br>106年</h3>
+                                    <time datetime="2017-08-01">106/08/01</time>
+                                    <time datetime="2018-03-31">107/03/31</time>
+                                </div>
+                                <div class="event-content">產學攜手、青銀共創培育智慧照護科技人才</div>
+                                <mark class="tag">萌牙型計畫</mark>
+                            </article>
+                        </li>
+                        <li class="timeline-item">
+                            <article class="timeline-content">
+                                <div class="event-header">
+                                    <h3>第一期<br>107-108</h3>
+                                    <time datetime="2018-04-01">107/04/01</time>
+                                    <time datetime="2019-12-31">108/12/31</time>
+                                </div>
+                                <div class="event-content">青銀共創、攜手在地共築智慧高齡友善社區</div>
+                                <span class="tag">深耕型計畫</span>
+                            </article>
+                        </li>
+                        <li class="timeline-item">
+                            <article class="timeline-content">
+                                <div class="event-header">
+                                    <h3>第二期<br>109-111</h3>
+                                    <time datetime="2020-01-01">109/01/01</time>
+                                    <time datetime="2022-12-31">111/12/31</time>
+                                </div>
+                                <div class="event-content">青銀共創、攜手在地共築智慧高齡友善社區</div>
+                                <span class="tag">深耕型計畫</span>
+                            </article>
+                        </li>
+                        <li class="timeline-item">
+                            <article class="timeline-content">
+                                <div class="event-header">
+                                    <h3>第三期<br>111-112</h3>
+                                    <time datetime="2022-01-01">111/01/01</time>
+                                    <time datetime="2023-12-31">112/12/31</time>
+                                </div>
+                                <div class="event-content">青銀共創打造在地智慧自在不老力</div>
+                                <span class="tag">永續發展類特色永續型計畫</span>
+                            </article>
+                        </li>
+                        <li class="timeline-item -now">
+                            <article class="timeline-content">
+                                <div class="event-header">
+                                    <h3>第四期<br>114-116</h3>
+                                    <time datetime="2025-04-01">114/1/1</time>
+                                    <time datetime="2027-12-31">116/12/31</time>
+                                </div>
+                                <div class="event-content">青銀共創打造在地智慧自在不老力</div>
+                                <span class="tag">永續發展類特色永續型計畫</span>
+                            </article>
+                        </li>
+                    </ol>
+                </div>
                 <link rel="stylesheet" href="public/stylesheets/timeline.css">
-            </div>
-        </section>
+            </section>
+        </div>
 
-        <section class="c-section" data-scroll-section id="WhatDo">
-            <div class="o-container" id="Jinhua">
-                <div class="o-layout">
-                    <div class="d-flex justify-content-center">
-                        <div class="c-section_infos">
-                            <div class="c-section_infos_inner row">
-                                <div class="col-lg align-content-center">
-                                    <div class="d-flex justify-content-between">
-                                        <img src="public/images/PracticalResults/Jinhua/Jinhua.png">
-                                        <span class="section_info-header">金華</span>
-                                    </div>
-                                    <div
-                                        class="border border-dark border-3 rounded text-center fs-4 fw-bold text-secondary">
-                                        <span>2017</span>
-                                        <span>-</span>
-                                        <span>至今</span>
-                                    </div>
-                                </div>
-                                <div class="col-lg">
-                                    <div class="c-sections_infos_text u-text pt-lg-3">
-                                        <ul class="fs-4" style="list-style: disc;">
-                                            <li>宜居社區、國際安全社區，高級住宅區多多、大台南觀光城、附近有許多商圈、戲劇拍攝取鏡地、美食多</li>
-                                            <li>里長aka 夢工廠寢具老闆</li>
-                                        </ul>
-                                    </div>
-                                </div>
+        <div id="WhatDo" class="overflow-hidden">
+            <section class="community-section" id="Jinhua">
+                <div class="community-header">
+                    <div class="d-flex flex-column align-items-center justify-content-center">
+                        <div class="p-box">
+                            <img class="img-fluid" src="public/images/PracticalResults/Jinhua/Jinhua.png">
+                            <div class="p-time">
+                                <span>2017</span>
+                                <span>至今</span>
                             </div>
                         </div>
                     </div>
-                    <div class="row g-2 text-center mt-3">
-                        <div class="col-sm-6 col-md-4">
-                            <img class="gallery-img rounded" src="public/images/PracticalResults/Jinhua/Jinhua1.jpg">
-                            <p class="gallery-text d-lg-none">宜居社區、國際安全社區</p>
+                    <div class="col p-0">
+                        <ul style="list-style: disc;">
+                            <li>宜居社區、國際安全社區，高級住宅區多多、大台南觀光城、附近有許多商圈、戲劇拍攝取鏡地、美食多</li>
+                            <li>里長aka 夢工廠寢具老闆</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="gallery-container">
+                    <div class="community-gallery">
+                        <div class="gallery-item" data-alt="宜居社區、國際安全社區">
+                            <img src="public/images/PracticalResults/Jinhua/Jinhua1.jpg">
                         </div>
-                        <div class="col-sm-6 col-md-4">
-                            <img class="gallery-img rounded" src="public/images/PracticalResults/Jinhua/Jinhua2.jpg">
-                            <p class="gallery-text d-lg-none">高級住宅</p>
+                        <div class="gallery-item" data-alt="高級住宅">
+                            <img src="public/images/PracticalResults/Jinhua/Jinhua2.jpg">
                         </div>
-                        <div class="col-sm-6 col-md-4">
-                            <img class="gallery-img rounded" src="public/images/PracticalResults/Jinhua/Jinhua3.jpg">
-                            <p class="gallery-text d-lg-none">碳佐麻里和誠品</p>
+                        <div class="gallery-item" data-alt="碳佐麻里和誠品">
+                            <img src="public/images/PracticalResults/Jinhua/Jinhua3.jpg">
                         </div>
-                        <div class="col-sm-6 col-md-4">
-                            <img class="gallery-img rounded" src="public/images/PracticalResults/Jinhua/Jinhua4.jpg">
-                            <p class="gallery-text d-lg-none">大台南觀光城、商圈</p>
+                        <div class="gallery-item" data-alt="大台南觀光城、商圈">
+                            <img src="public/images/PracticalResults/Jinhua/Jinhua4.jpg">
                         </div>
-                        <div class="col-sm-6 col-md-4">
-                            <img class="gallery-img rounded" src="public/images/PracticalResults/Jinhua/Jinhua5.jpg">
-                            <p class="gallery-text d-lg-none">金華里里長(左)</p>
+                        <div class="gallery-item" data-alt="金華里里長(左)">
+                            <img src="public/images/PracticalResults/Jinhua/Jinhua5.jpg">
                         </div>
-                        <div class="col-sm-6 col-md-4">
-                            <img class="gallery-img rounded" src="public/images/PracticalResults/Jinhua/Jinhua6.jpg">
-                            <p class="gallery-text d-lg-none">金華社區大家庭</p>
+                        <div class="gallery-item" data-alt="金華社區大家庭">
+                            <img src="public/images/PracticalResults/Jinhua/Jinhua6.jpg">
                         </div>
                     </div>
                 </div>
-        </section>
-        <section class="c-section" data-scroll-section>
-            <div class="o-container" id="Kunshen">
-                <div class="o-layout">
-                    <div class="d-flex justify-content-center">
-                        <div class="c-section_infos">
-                            <div class="c-section_infos_inner row">
-                                <div class="col-lg align-content-center">
-                                    <div class="d-flex justify-content-between">
-                                        <img src="public/images/PracticalResults/Kunshen/Kunshen.png">
-                                        <span class="section_info-header">鯤鯓</span>
-                                    </div>
-                                    <div
-                                        class="border border-dark border-3 rounded text-center fs-4 fw-bold text-secondary">
-                                        <span>2018</span>
-                                        <span>-</span>
-                                        <span>至今</span>
-                                    </div>
-                                </div>
-                                <div class="col-lg">
-                                    <div class="c-sections_infos_text u-text pt-lg-3">
-                                        <ul class="fs-4" style="list-style: disc;">
-                                            <li>位於台南市區的純樸漁村、老房子、正靠黃金海岸、蚵產業、小提琴，社區沒有便利商店</li>
-                                            <li>里長aka總鋪師</li>
-                                        </ul>
-                                    </div>
-                                </div>
+            </section>
+            <section class="community-section" id="Kunshen">
+                <div class="community-header">
+                    <div class="d-flex flex-column align-items-center justify-content-center">
+                        <div class="p-box">
+                            <img src="public/images/PracticalResults/Kunshen/Kunshen.png">
+                            <div class="p-time">
+                                <span>2018</span>
+                                <span>至今</span>
                             </div>
                         </div>
                     </div>
-                    <div class="row g-2 text-center mt-3">
-                        <div class="col-sm-6 col-md-4">
-                            <img class="gallery-img rounded" src="public/images/PracticalResults/Kunshen/Kunshen1.png">
-                            <p class="gallery-text d-lg-none">四鯤鯓龍山寺</p>
+                    <div class="col p-0">
+                        <ul style="list-style: disc;">
+                            <li>位於台南市區的純樸漁村、老房子、正靠黃金海岸、蚵產業、小提琴，社區沒有便利商店</li>
+                            <li>里長aka總鋪師</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="gallery-container">
+                    <div class="community-gallery">
+                        <div class="gallery-item" data-alt="四鯤鯓龍山寺">
+                            <img src="public/images/PracticalResults/Kunshen/Kunshen1.png">
                         </div>
-                        <div class="col-sm-6 col-md-4">
-                            <img class="gallery-img rounded" src="public/images/PracticalResults/Kunshen/Kunshen2.png">
-                            <p class="gallery-text d-lg-none">龍崗國小</p>
+                        <div class="gallery-item" data-alt="龍崗國小">
+                            <img src="public/images/PracticalResults/Kunshen/Kunshen2.png">
                         </div>
-                        <div class="col-sm-6 col-md-4">
-                            <img class="gallery-img rounded" src="public/images/PracticalResults/Kunshen/Kunshen3.jpg">
-                            <p class="gallery-text d-lg-none">黃金海岸</p>
+                        <div class="gallery-item" data-alt="黃金海岸">
+                            <img src="public/images/PracticalResults/Kunshen/Kunshen3.jpg">
                         </div>
-                        <div class="col-sm-6 col-md-4">
-                            <img class="gallery-img rounded" src="public/images/PracticalResults/Kunshen/Kunshen4.png">
-                            <p class="gallery-text d-lg-none">大台南觀光城、商圈</p>
+                        <div class="gallery-item" data-alt="大台南觀光城、商圈">
+                            <img src="public/images/PracticalResults/Kunshen/Kunshen4.png">
                         </div>
-                        <div class="col-sm-6 col-md-4">
-                            <img class="gallery-img rounded" src="public/images/PracticalResults/Kunshen/Kunshen5.png">
-                            <p class="gallery-text d-lg-none">四鯤鯓碼頭</p>
+                        <div class="gallery-item" data-alt="四鯤鯓碼頭">
+                            <img src="public/images/PracticalResults/Kunshen/Kunshen5.png">
                         </div>
-                        <div class="col-sm-6 col-md-4">
-                            <img class="gallery-img rounded" src="public/images/PracticalResults/Kunshen/Kunshen6.png">
-                            <p class="gallery-text d-lg-none">蚵在心底的鯤鯓工作站</p>
+                        <div class="gallery-item" data-alt="蚵在心底的鯤鯓工作站">
+                            <img src="public/images/PracticalResults/Kunshen/Kunshen6.png">
                         </div>
                     </div>
                 </div>
-            </div>
-        </section>
-        <section class="c-section" data-scroll-section>
-            <div class="o-container" id="Wenling">
-                <div class="o-layout">
-                    <div class="d-flex justify-content-center">
-                        <div class="c-section_infos">
-                            <div class="c-section_infos_inner row">
-                                <div class="col-lg align-content-center">
-                                    <div class="d-flex justify-content-between">
-                                        <img src="public/images/PracticalResults/Wenling/Wenling.png">
-                                        <span class="section_info-header">溫陵</span>
-                                    </div>
-                                    <div
-                                        class="border border-dark border-3 rounded text-center fs-4 fw-bold text-secondary">
-                                        <span>2022/12</span>
-                                        <span>-</span>
-                                        <span>至今</span>
-                                    </div>
-                                </div>
-                                <div class="col-lg">
-                                    <div class="c-sections_infos_text u-text pt-lg-3">
-                                        <ul class="fs-4" style="list-style: disc;">
-                                            <li>府城古都蛋黃區、美術館、古蹟、廟宇多、小巷多厲害的文創與甜點、美食多、很潮</li>
-                                            <li>里長aka碗粿名店老闆</li>
-                                        </ul>
-                                    </div>
-                                </div>
+            </section>
+            <section class="community-section" id="Wenling">
+                <div class="community-header">
+                    <div class="d-flex flex-column align-items-center justify-content-center">
+                        <div class="p-box">
+                            <img src="public/images/PracticalResults/Wenling/Wenling.png">
+                            <div class="p-time">
+                                <span>2022/12</span>
+                                <span>至今</span>
                             </div>
                         </div>
                     </div>
-                    <div class="row g-2 text-center mt-3">
-                        <div class="col-sm-6 col-md-4">
-                            <img class="gallery-img rounded" src="public/images/PracticalResults/Wenling/Wenling1.png">
-                            <p class="gallery-text d-lg-none">林百貨</p>
+                    <div class="col p-0">
+                        <ul style="list-style: disc;">
+                            <li>府城古都蛋黃區、美術館、古蹟、廟宇多、小巷多厲害的文創與甜點、美食多、很潮</li>
+                            <li>里長aka碗粿名店老闆</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="gallery-container">
+                    <div class="community-gallery">
+                        <div class="gallery-item" data-alt="林百貨">
+                            <img src="public/images/PracticalResults/Wenling/Wenling1.png">
                         </div>
-                        <div class="col-sm-6 col-md-4">
-                            <img class="gallery-img rounded" src="public/images/PracticalResults/Wenling/Wenling2.png">
-                            <p class="gallery-text d-lg-none">友愛市場</p>
+                        <div class="gallery-item" data-alt="友愛市場">
+                            <img src="public/images/PracticalResults/Wenling/Wenling2.png">
                         </div>
-                        <div class="col-sm-6 col-md-4">
-                            <img class="gallery-img rounded" src="public/images/PracticalResults/Wenling/Wenling3.jpg">
-                            <p class="gallery-text d-lg-none">臺南美術二館</p>
+                        <div class="gallery-item" data-alt="臺南美術二館">
+                            <img src="public/images/PracticalResults/Wenling/Wenling3.jpg">
                         </div>
-                        <div class="col-sm-6 col-md-4">
-                            <img class="gallery-img rounded" src="public/images/PracticalResults/Wenling/Wenling4.jpg">
-                            <p class="gallery-text d-lg-none">蝸牛巷</p>
+                        <div class="gallery-item" data-alt="蝸牛巷">
+                            <img src="public/images/PracticalResults/Wenling/Wenling4.jpg">
                         </div>
-                        <div class="col-sm-6 col-md-4">
-                            <img class="gallery-img rounded" src="public/images/PracticalResults/Wenling/Wenling5.jpg">
-                            <p class="gallery-text d-lg-none">阿全碗粿</p>
+                        <div class="gallery-item" data-alt="阿全碗粿">
+                            <img src="public/images/PracticalResults/Wenling/Wenling5.jpg">
                         </div>
-                        <div class="col-sm-6 col-md-4">
-                            <img class="gallery-img rounded" src="public/images/PracticalResults/Wenling/Wenling6.png">
-                            <p class="gallery-text d-lg-none">關帝廳</p>
+                        <div class="gallery-item" data-alt="關帝廳">
+                            <img src="public/images/PracticalResults/Wenling/Wenling6.png">
                         </div>
                     </div>
                 </div>
-            </div>
-        </section>
-        <section class="c-section" data-scroll-section>
-            <div class="o-container" id="Jhaigang">
-                <div class="o-layout">
-                    <div class="d-flex justify-content-center">
-                        <div class="c-section_infos">
-                            <div class="c-section_infos_inner row">
-                                <div class="col-lg align-content-center">
-                                    <div class="text-center">
-                                        <span class="section_info-header">宅港</span>
-                                    </div>
-                                    <div
-                                        class="border border-dark border-3 rounded text-center fs-4 fw-bold text-secondary">
-                                        <span>2017</span>
-                                        <span>-</span>
-                                        <span>2022</span>
-                                        <span>|</span>
-                                        <span>結案</span>
-                                    </div>
-                                </div>
-                                <div class="col-lg">
-                                    <div class="c-sections_infos_text u-text pt-lg-3">
-                                        <ul class="fs-4" style="list-style: disc;">
-                                            <li>純樸、極偏鄉，離市區更遙遠的地方，資源相較市區匱乏。</li>
-                                            <li>鹽地番茄、十二婆姐陣。</li>
-                                        </ul>
-                                    </div>
-                                </div>
+            </section>
+            <section class="community-section" id="Jhaigang">
+                <div class="community-header">
+                    <div class="d-flex flex-column align-items-center justify-content-center">
+                        <div class="p-box">
+                            <h1>宅港</h1>
+                            <div class="p-time">
+                                <span>2017</span>-<span>2022</span>
+                                <span>| 結案</span>
                             </div>
                         </div>
                     </div>
-                    <div class="row g-2 text-center mt-3">
-                        <div class="col-sm-6 col-md-4">
-                            <img class="gallery-img rounded"
-                                src="public/images/PracticalResults/Jhaigang/Jhaigang1.jpg">
-                            <p class="gallery-text d-lg-none">鹽地番茄</p>
+                    <div class="col p-0">
+                        <ul style="list-style: disc;">
+                            <li>純樸、極偏鄉，離市區更遙遠的地方，資源相較市區匱乏。</li>
+                            <li>鹽地番茄、十二婆姐陣。</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="gallery-container">
+                    <div class="community-gallery">
+                        <div class="gallery-item" data-alt="鹽地番茄">
+                            <img src="public/images/PracticalResults/Jhaigang/Jhaigang1.jpg">
                         </div>
-                        <div class="col-sm-6 col-md-4">
-                            <img class="gallery-img rounded"
-                                src="public/images/PracticalResults/Jhaigang/Jhaigang2.jpg">
-                            <p class="gallery-text d-lg-none">宅港社區</p>
+                        <div class="gallery-item" data-alt="宅港社區">
+                            <img src="public/images/PracticalResults/Jhaigang/Jhaigang2.jpg">
                         </div>
-                        <div class="col-sm col-md">
-                            <img class="gallery-img rounded"
-                                src="public/images/PracticalResults/Jhaigang/Jhaigang3.jpg">
-                            <p class="gallery-text d-lg-none">十二婆姐陣</p>
+                        <div class="gallery-item" data-alt="十二婆姐陣">
+                            <img src="public/images/PracticalResults/Jhaigang/Jhaigang3.jpg">
                         </div>
                     </div>
                 </div>
-            </div>
-        </section>
-        
-        <footer class="container" data-scroll-section>
-            <div class="d-flex flex-wrap justify-content-between py-3 my-4 border-top">
-                <div class="col-lg-3 col-md-4 d-flex flex-column align-items-center">
-                    <a class="mb-3 text-body-secondary text-decoration-none lh-1" aria-label="USR">
-                        <img src="public/assets/usr_logo.png">
-                    </a>
-                    <a class="mb-3 text-body-secondary text-decoration-none lh-1" aria-label="STUST"
-                        href="https://www.stust.edu.tw/">
-                        <img src="public/assets/stust_logo.png">
-                    </a>
-                    <span class="mb-3 mb-md-0 text-body-secondary"></span>
-                </div>
-                <ul class="nav col justify-content-end list-unstyled d-flex">
-                    <li class="ms-3">
-                        <a class="text-body-secondary" aria-label="Instagram"
-                            href="https://www.instagram.com/stusthoki?igsh=YnE0NTloejZidGJ1">
-                            <svg class="bi" width="24" height="24" aria-hidden="true">
-                                <use xlink:href="#instagram"></use>
-                            </svg>
-                        </a>
-                    </li>
-                </ul>
-            </div>
-            <svg xmlns="http://www.w3.org/2000/svg" class="d-none">
-                <symbol id="instagram" viewBox="0 0 16 16">
-                    <path
-                        d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z">
-                    </path>
-                </symbol>
-            </svg>
-        </footer>
+            </section>
+            <link rel="stylesheet" href="public/stylesheets/gallery.css">
+        </div>
     </main>
+
+    <footer class="container">
+        <div class="d-flex flex-wrap justify-content-between gap-5 py-3 border-top">
+            <ul class="nav col list-unstyled d-flex">
+                <li class="me-3">
+                    <a aria-label="Instagram" href="https://www.instagram.com/stusthoki?igsh=YnE0NTloejZidGJ1">
+                        <svg width="24" height="24">
+                            <use xlink:href="public/icons.svg#instagram"></use>
+                        </svg>
+                    </a>
+                </li>
+            </ul>
+            <div class="col-lg-4 col-md-5 d-flex flex-column align-items-center">
+                <a class="mb-3 text-body-secondary text-decoration-none lh-1" aria-label="STUST"
+                    href="https://www.stust.edu.tw/">
+                    <img src="public/assets/stust_logo.png">
+                </a>
+                <a class="mb-3 text-body-secondary text-decoration-none lh-1" aria-label="USR">
+                    <img src="public/assets/usr_logo.png">
+                </a>
+                <span class="mb-3 mb-md-0 text-body-secondary"></span>
+            </div>
+        </div>
+    </footer>
+
     <script src="public/javascripts/main.js"></script>
     <script src="public/javascripts/scroll.js"></script>
 </body>

@@ -28,6 +28,14 @@ a svg {
 ul {
   list-style: none;
 }
+ol > li,
+ul > li {
+  margin-top: 1.25rem;
+}
+ol > li > span,
+ul > li > span {
+  font-weight: normal;
+}
 
 img {
   max-width: 100%;

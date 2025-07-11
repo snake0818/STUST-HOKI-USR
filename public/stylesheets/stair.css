@@ -1,7 +1,7 @@
 .stair-container {
   display: flex;
   flex-direction: row;
-  gap: 20px;
+  gap: 15px;
   flex-wrap: nowrap;
   justify-content: center;
 }
@@ -30,7 +30,7 @@
   border-top: 8px solid #3498db;
   padding: 10px;
   font-weight: bold;
-  font-size: 1.4132rem;
+  font-size: 1.454rem;
   color: #2c3e50;
 }
 .step-text {
@@ -89,5 +89,22 @@
   }
   .arrow-text > .eng {
     transform: rotate(-90deg);
+  }
+}
+@media (min-width: 1260px) {
+  .step-title {
+    font-size: 2rem;
+  }
+  .step:nth-child(1) {
+    margin-top: 28rem;
+  }
+  .step:nth-child(2) {
+    margin-top: 21rem;
+  }
+  .step:nth-child(3) {
+    margin-top: 14rem;
+  }
+  .step:nth-child(4) {
+    margin-top: 7rem;
   }
 }
