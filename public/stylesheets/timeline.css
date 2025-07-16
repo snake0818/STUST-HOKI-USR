@@ -22,19 +22,24 @@
     #90e1cc,
     #a0e8d7
   );
-  transform: translateX(-50%);
+  transform: translateX(-50%) scaleY(0);
+  transform-origin: top;
+  transition: transform 3.2s cubic-bezier(0, 0.1, 0.1, 0);
 }
 .timeline::after {
   content: "";
   position: absolute;
   bottom: -40px;
   left: 50%;
-  transform: translateX(-50%);
+  transform: translateX(-50%) translateY(-30px);
   width: 0;
   height: 0;
   border-left: 30px solid transparent;
   border-right: 30px solid transparent;
   border-top: 40px solid #a0e8d7;
+  opacity: 0;
+  transform-origin: center top;
+  transition: opacity 0.16s ease 3.2s, transform 0.5s ease 3.2s;
 }
 
 .timeline-item {
@@ -44,6 +49,9 @@
   display: flex;
   justify-content: flex-start;
   position: relative;
+  opacity: 0;
+  transition: opacity 0.6s ease,
+    transform 0.6s cubic-bezier(0.215, 0.61, 0.355, 1);
 }
 .timeline-item::before {
   content: "";
@@ -55,6 +63,9 @@
   height: 32px;
   border-radius: 50%;
   z-index: 2;
+  opacity: 0;
+  transition: opacity 0.6s ease,
+    transform 0.6s cubic-bezier(0.215, 0.61, 0.355, 1);
 }
 .timeline-item:nth-child(1)::before {
   background: #58b6c0;
@@ -147,11 +158,14 @@
   .timeline-item:nth-child(even) {
     justify-content: flex-end;
   }
+
+  .timeline-item:nth-child(odd) {
+    transform: translateX(50px);
+  }
+  .timeline-item:nth-child(even) {
+    transform: translateX(-50px);
+  }
 }
-
-
-
-
 
 .event-header > h3 {
   font-weight: bolder;
@@ -181,4 +195,40 @@
 }
 .event-content::after {
   content: "」";
+}
+
+.timeline.inview::before {
+  transform: translateX(-50%) scaleY(1);
+}
+.timeline.inview::after {
+  opacity: 1;
+  transform: translateX(-50%) translateY(0);
+}
+
+.timeline.inview > .timeline-item {
+  opacity: 1;
+  transform: translateX(0);
+}
+.timeline.inview > .timeline-item::before {
+  opacity: 1;
+}
+.timeline.inview > .timeline-item:nth-child(1),
+.timeline.inview > .timeline-item:nth-child(1)::before {
+  transition-delay: 0.5s;
+}
+.timeline.inview > .timeline-item:nth-child(2),
+.timeline.inview > .timeline-item:nth-child(2)::before {
+  transition-delay: 1s;
+}
+.timeline.inview > .timeline-item:nth-child(3),
+.timeline.inview > .timeline-item:nth-child(3)::before {
+  transition-delay: 1.5s;
+}
+.timeline.inview > .timeline-item:nth-child(4),
+.timeline.inview > .timeline-item:nth-child(4)::before {
+  transition-delay: 2s;
+}
+.timeline.inview > .timeline-item:nth-child(5),
+.timeline.inview > .timeline-item:nth-child(5)::before {
+  transition-delay: 2.5s;
 }
